@@ -95,10 +95,7 @@ if q == 'y':
     classLst = []
     for i in range(10):
         classLst.append({'tp': 0, 'tn': 0, 'fp': 0, 'fn': 0})
-    tp = 0
-    tn = 0
-    fp = 0
-    fn = 0
+    tp, tn, fp, fn = 0, 0, 0, 0
 
     # The predict_classes function outputs the highest probability class
     # according to the trained classifier for each input example.
