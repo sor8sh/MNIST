@@ -16,6 +16,6 @@
 A DNN model for MNIST classification problem, implemented in python with Keras.
 
 Model's architecture:
-- Sequential: Dense (512) + Dropout + Dense (512) + Dropout + Dense (10)
+- Sequential: Dense (512, relu) + Dropout + Dense (512, relu) + Dropout + Dense (10, softmax)
 - Loss function: Categorical Crossentropy
 - Optimizer: Adam
