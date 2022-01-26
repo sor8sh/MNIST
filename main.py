@@ -5,7 +5,7 @@ import keras
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
-from keras.optimizers import RMSprop
+from keras.optimizers import Adam
 
 dropOut = float(input('Dropout (a number between 0 & 1) >> '))
 valData = input('Validation set? (y/n) >> ')
@@ -57,7 +57,7 @@ model.add(Dense(num_classes, activation='softmax'))
 model.summary()
 
 model.compile(loss='categorical_crossentropy',
-              optimizer=RMSprop(),
+              optimizer=Adam(),
               metrics=['accuracy'])
 
 history = model.fit(x_train, y_train,
